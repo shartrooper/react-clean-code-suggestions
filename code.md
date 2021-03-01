@@ -56,12 +56,12 @@ const HungryMessage = ({ isHungry }) => (
   <span>{isHungry ? 'I am hungry' : 'I am full'}</span>
 )
 
-export const BooleanPropBad = () => (
+export const BooleanPropGood = () => (
   <div>
     <span>
       <b>This person is hungry: </b>
     </span>
-    <HungryMessage isHungry={true} />
+    <HungryMessage isHungry />
     <br />
     <span>
       <b>This person is full: </b>
@@ -79,11 +79,11 @@ import React from 'react'
 
 const Greeting = ({ personName }) => <p>Hi, {personName}!</p>
 
-export const StringPropValuesBad = () => (
+export const StringPropValuesGood = () => (
   <div>
-    <Greeting personName={"John"} />
-    <Greeting personName={'Matt'} />
-    <Greeting personName={`Paul`} />
+    <Greeting personName="John" />
+    <Greeting personName="Matt" />
+    <Greeting personName="Paul" />
   </div>
 )
 ```
